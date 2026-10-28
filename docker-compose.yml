@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=${ENVIRONMENT:-production}
+      - SECRET_KEY=${SECRET_KEY:?SECRET_KEY must be set in your .env file}
+      - DATABASE_URL=sqlite:////app/data/platform.db
+      - DATA_DIR=/app/data
+      - STORAGE_DIR=/app/storage/resumes
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:5173}
+      - SEED_DEMO_DATA=${SEED_DEMO_DATA:-false}
+      - SEED_ADMIN_EMAIL=${SEED_ADMIN_EMAIL:-}
+      - SEED_ADMIN_PASSWORD=${SEED_ADMIN_PASSWORD:-}
+      - MAX_FILE_SIZE_MB=${MAX_FILE_SIZE_MB:-15}
+      - MAX_PDF_PAGES=${MAX_PDF_PAGES:-15}
+    volumes:
+      - ./storage:/app/storage
+      - backend-data:/app/data
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  backend-data:
