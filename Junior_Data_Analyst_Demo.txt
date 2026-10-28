@@ -1,0 +1,30 @@
+DEMO CANDIDATE
+Email: candidate@resumeskill.com | Phone: (555) 234-5678 | San Francisco, CA
+
+PROFESSIONAL SUMMARY
+Aspiring Junior Data Analyst with hands-on project experience in Python, SQL query optimization, and exploratory data analysis. Eager to solve real-world problems through data-driven analysis and clear visualizations.
+
+EDUCATION
+Bachelor of Technology in Artificial Intelligence and Data Science
+State University, 2021 – 2025
+Relevant Coursework: Database Management Systems, Data Structures, Applied Statistics, Software Engineering
+
+TECHNICAL SKILLS
+Programming: Python, Java, C++
+Databases: SQL, SQLite, PostgreSQL
+Data & Web: HTML, CSS, Data Analysis, Machine Learning
+Tools: Git, GitHub, VS Code
+
+PROJECTS
+Student Attendance Management System
+• Developed a full student attendance tracking application using Python and SQLite.
+• Implemented record creation, automated data retrieval, and SQL query optimizations reducing search times by 30%.
+• Formatted attendance analytics and generated monthly summary reports for 500+ student records.
+
+Sales Data Exploration Engine
+• Built exploratory data analysis scripts using Python to clean transaction datasets and identify monthly revenue trends.
+• Visualized key distribution metrics and customer purchase habits across 10,000+ transaction records.
+
+CERTIFICATIONS
+• Introductory Python Programming Certificate – Coursera
+• Relational Database Fundamentals Coursework – University Credential
